@@ -1,0 +1,8 @@
+<h2>Create Enquiry</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ customer_form.as_p }}
+    {{ item_form.as_p }}
+    {{ enquiry_form.as_p }}
+    <button type="submit">Submit</button>
+</form>

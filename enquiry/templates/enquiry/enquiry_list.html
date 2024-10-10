@@ -1,0 +1,6 @@
+<h2>Enquiry List</h2>
+<ul>
+    {% for enquiry in enquiries %}
+        <li>{{ enquiry.customer.name }} - {{ enquiry.item.name }} - {{ enquiry.status }}</li>
+    {% endfor %}
+</ul>
